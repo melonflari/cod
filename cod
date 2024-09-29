@@ -1,0 +1,3856 @@
+nage the groups of the channel
+
+
+
+GET
+/groups
+Get groups
+
+
+Parameters
+Name	Description
+count
+number
+(query)
+Count of objects to return
+
+Default value : 100
+
+100
+offset
+number
+(query)
+Offset of objects to return
+
+offset
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "groups": [
+    {
+      "id": "368626-369516-714-7-01@.BthUr3KqIAW7sYU0",
+      "name": "Group name",
+      "type": "group",
+      "timestamp": 1675964377,
+      "chat_pic": "https://example.com/photo.jpg",
+      "chat_pic_full": "https://example.com/photo.jpg",
+      "pin": true,
+      "mute": true,
+      "mute_until": 0,
+      "archive": true,
+      "unread": 0,
+      "unread_mention": false,
+      "read_only": false,
+      "not_spam": true,
+      "last_message": {
+        "id": "string",
+        "type": "text",
+        "subtype": "string",
+        "chat_id": "string",
+        "chat_name": "string",
+        "from": "string",
+        "from_me": true,
+        "from_name": "string",
+        "source": "text",
+        "timestamp": 0,
+        "device_id": 0,
+        "status": "failed",
+        "text": {
+          "body": "string",
+          "buttons": [
+            {
+              "type": "reply",
+              "title": "string",
+              "id": "string"
+            }
+          ],
+          "sections": [
+            {
+              "title": "string",
+              "rows": [
+                {
+                  "title": "string",
+                  "description": "string",
+                  "id": "string"
+                }
+              ],
+              "product_items": [
+                {
+                  "catalog_id": "string",
+                  "product_id": "string"
+                }
+              ]
+            }
+          ],
+          "button": "string",
+          "view_once": true
+        },
+        "image": {
+          "id": "5rvSISNUkJBG0HJLTIOSaAbHlLSM2N3QBx0htH0C3OA5GjB8lFIoFG16lahthZA--ADfee7a05d08fbAa1AEE",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "caption": "string",
+          "preview": "string",
+          "width": 0,
+          "height": 0,
+          "buttons": [
+            {
+              "type": "reply",
+              "title": "string",
+              "id": "string"
+            }
+          ],
+          "view_once": true
+        },
+        "video": {
+          "id": "XTpiBTe3SgXis23Q5fFKi7dmHcz45y8tOjRW0EYlyRHlbJ3RtFnWO0VdZKpWACOnct-4A-4ACC6B7fB-e02D1228850F5fd1cBeE2fcAB-6bB",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "caption": "string",
+          "preview": "string",
+          "width": 0,
+          "height": 0,
+          "seconds": 0,
+          "autoplay": true,
+          "buttons": [
+            {
+              "type": "reply",
+              "title": "string",
+              "id": "string"
+            }
+          ],
+          "view_once": true
+        },
+        "short": {
+          "id": "2BKUhJZkY-08461D16f2AcDBDBca99BcB387-b-D4df0e7Cb7f49273b35cD7732-a6ddA-93257f802FEf4fdE5aC1b",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "caption": "string",
+          "preview": "string",
+          "width": 0,
+          "height": 0,
+          "seconds": 0,
+          "autoplay": true,
+          "buttons": [
+            {
+              "type": "reply",
+              "title": "string",
+              "id": "string"
+            }
+          ],
+          "view_once": true
+        },
+        "gif": {
+          "id": "rP8gPbornXJPxxvuHg5fHJi4VJGoROvmdbCzkea9SytygTJziGQ-36e6cdc8c408543A18D5dc4a2-0dfDAa33a4cA5e1-BdDBBF786dBcA0bbCB4E2Af311b11adcb8fa3A8F6b",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "caption": "string",
+          "preview": "string",
+          "width": 0,
+          "height": 0,
+          "seconds": 0,
+          "autoplay": true,
+          "buttons": [
+            {
+              "type": "reply",
+              "title": "string",
+              "id": "string"
+            }
+          ],
+          "view_once": true
+        },
+        "audio": {
+          "id": "Gidb8mLDIyY7lbS0Fym87TylAi9c23qO6dryWcdBIQY6zjjLjjNmGN--B53c07fD23d871afddAa99d61-E",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "seconds": 0,
+          "recording_time": 0,
+          "view_once": true
+        },
+        "voice": {
+          "id": "0QAs6rO9UaOAloJBt5JI6DXpeBlwibl6kt9jhff18Q4Lz7P0Zdu2WEwFy8qeGKV6lVe-8ff9fA-6B5aB33DfCDEAE-fEf604fA--a48aD0b00E516ED0DBEa0eB012DE036Ff39a",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "seconds": 0,
+          "recording_time": 0,
+          "view_once": true
+        },
+        "document": {
+          "id": "ftjQVHq6xkLDCn1AFDKfRWMugceXKRJNakFSW2rry545iFb8geFmwXi1Kb6h43N4ejtGHtuorSrOdDtcbAEItYPgAlG-5049BaBCCbEFEC9-6f7bA439cd491ca0b100B2c9CAA56db1F2cA",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "caption": "string",
+          "filename": "string",
+          "page_count": 0,
+          "preview": "string",
+          "buttons": [
+            {
+              "type": "reply",
+              "title": "string",
+              "id": "string"
+            }
+          ],
+          "view_once": true
+        },
+        "link_preview": {
+          "body": "string",
+          "url": "string",
+          "id": "tOQUmc577op22q-f7AacB-CA98FA7ba0DBC3200d6d1E6aaaB0a906ABf-fe366a-BDe9F19-b18BD2d0f8B02aDdc0aC19aEaEDE5cc8e",
+          "link": "string",
+          "sha256": "string",
+          "catalog_id": "20377691834",
+          "newsletter_id": "565804385811278690@newsletter",
+          "invite_code": "PEypHnosZ2ItLm9tr6Zlz7",
+          "title": "string",
+          "description": "string",
+          "canonical": "string",
+          "preview": "string",
+          "view_once": true
+        },
+        "sticker": {
+          "id": "Zw7Ea5txZXpnhchlbXUJZEinqdHvjd5dfPkK842Pi-83AEE9ee16C7D1Dc95Ac26fe5-6ad47C09d4aDedB50ec1d7EF-cDfC28e",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "animated": true,
+          "width": 0,
+          "height": 0,
+          "preview": "string",
+          "view_once": true
+        },
+        "location": {
+          "latitude": 0,
+          "longitude": 0,
+          "address": "string",
+          "name": "string",
+          "url": "string",
+          "preview": "string",
+          "accuracy": 0,
+          "speed": 0,
+          "degrees": 0,
+          "comment": "string",
+          "view_once": true
+        },
+        "live_location": {
+          "latitude": 0,
+          "longitude": 0,
+          "accuracy": 0,
+          "speed": 0,
+          "degrees": 0,
+          "caption": "string",
+          "sequence_number": 0,
+          "time_offset": 0,
+          "preview": "string",
+          "view_once": true
+        },
+        "contact": {
+          "name": "string",
+          "vcard": "string",
+          "view_once": true
+        },
+        "contact_list": {
+          "list": [
+            {
+              "name": "string",
+              "vcard": "string"
+            }
+          ],
+          "view_once": true
+        },
+        "interactive": {
+          "body": {
+            "text": "string"
+          },
+          "footer": {
+            "text": "string"
+          },
+          "action": {
+            "catalog_id": "string",
+            "product_id": "string"
+          },
+          "id": "6VSmNIHkPmqLqwC94K2mJbKKtATVQwKBnRH6nKmTje8k9HB--ed4306732E540eC29AD46eDEB",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0,
+          "view_once": true
+        },
+        "poll": {
+          "title": "string",
+          "options": [
+            "string",
+            "string"
+          ],
+          "vote_limit": 0,
+          "total": 0,
+          "results": [
+            {
+              "id": "string",
+              "name": "string",
+              "count": 0,
+              "voters": [
+                ""
+              ]
+            }
+          ],
+          "view_once": true
+        },
+        "hsm": {
+          "header": {
+            "type": "text",
+            "text": {
+              "body": "string"
+            },
+            "image": {
+              "id": "OY3bwGzs5p757LXgY0xkcbwsrtJMWgWCFGZsbgQSAeepjGrkyyOiNm03kmLSsYy2f-Fd2C6C3",
+              "link": "string",
+              "mime_type": "string",
+              "file_size": 0,
+              "file_name": "string",
+              "sha256": "string",
+              "timestamp": 0
+            },
+            "video": {
+              "id": "upMflAnk8flYETKwXKhrjFfsEpyFiR1M9FHJJNz-5CB38c3Ecd17c58ed-16046A11E-AfAE5eF96B3-7CaBBB2daAa9DB",
+              "link": "string",
+              "mime_type": "string",
+              "file_size": 0,
+              "file_name": "string",
+              "sha256": "string",
+              "timestamp": 0
+            },
+            "document": {
+              "id": "QJf5g4x8ZnkWFBlHOAoYP23UlDCZcu4WWnFYdUy-BfCDa10E4Be8beed27BF2eCdaBF804ab25A6A7f1BED20c-17fD7EAf2e05ed792Fa93b77BD-8457",
+              "link": "string",
+              "mime_type": "string",
+              "file_size": 0,
+              "file_name": "string",
+              "sha256": "string",
+              "timestamp": 0
+            },
+            "location": {
+              "latitude": 0,
+              "longitude": 0,
+              "address": "string",
+              "name": "string",
+              "url": "string",
+              "preview": "string",
+              "accuracy": 0,
+              "speed": 0,
+              "degrees": 0,
+              "comment": "string",
+              "view_once": true
+            }
+          },
+          "body": "string",
+          "footer": "string",
+          "buttons": [
+            {
+              "id": "string",
+              "type": "simple",
+              "text": "string",
+              "url": "string",
+              "phone_number": "string"
+            }
+          ]
+        },
+        "system": {
+          "body": "string"
+        },
+        "order": {
+          "order_id": "string",
+          "seller": "string",
+          "title": "string",
+          "text": "string",
+          "token": "string",
+          "item_count": 0,
+          "currency": "USD",
+          "total_price": 0,
+          "status": "new",
+          "preview": "string"
+        },
+        "group_invite": {
+          "body": "string",
+          "url": "string",
+          "id": "GwtYAaUrqbTv9qescMiT7ocXrkEk1CSYWrAFwFzLPFe9k7DMtdz5zKFfz-ca406-E54eCbB56B-F1E057-aa-Bc640Ba9EEC392A7B-c503A0D650bBEc5c5A8B6201cA401f4e3D5A76c9f61eeA",
+          "link": "string",
+          "sha256": "string",
+          "catalog_id": "",
+          "newsletter_id": "09551864178189@newsletter",
+          "invite_code": "pb67Lte8jYpZPWKnyP5i5S",
+          "title": "string",
+          "description": "string",
+          "canonical": "string",
+          "preview": "string",
+          "view_once": true
+        },
+        "newsletter_invite": {
+          "body": "string",
+          "url": "string",
+          "id": "5Y0oO2YcSbCsor1Uth9ONZOJGwVqZY7hiL1wIQOv-9dcE8aFfC-3F299aC62438FEAee3057bAbe48BF3a75aF93a5dcd3d4-Cf6bDCB4AD-bB1",
+          "link": "string",
+          "sha256": "string",
+          "catalog_id": "",
+          "newsletter_id": "8595063162808@newsletter",
+          "invite_code": "HS2WswoCC1NmkMJFVrgaGI",
+          "title": "string",
+          "description": "string",
+          "canonical": "string",
+          "preview": "string",
+          "view_once": true
+        },
+        "admin_invite": {
+          "body": "string",
+          "newsletter_id": "5938625039709003@newsletter",
+          "newsletter_name": "string",
+          "expiration": 0,
+          "preview": "string"
+        },
+        "product": {
+          "catalog_id": "string",
+          "product_id": "string"
+        },
+        "catalog": {
+          "body": "string",
+          "url": "string",
+          "id": "F9zp8EMPlOY5fpJw2hE6oiJYzEW3CYatjvK1xIwSZMJwkEipn39P-B-8d30Ca9a59e8B0f34edeE40E4",
+          "link": "string",
+          "sha256": "string",
+          "catalog_id": "",
+          "newsletter_id": "4951952660019053@newsletter",
+          "invite_code": "RwzkN6d4UKwS7KE1PQy97X",
+          "title": "string",
+          "description": "string",
+          "canonical": "string",
+          "preview": "string",
+          "view_once": true
+        },
+        "product_items": {
+          "type": "list"
+        },
+        "action": {
+          "target": "string",
+          "type": "edited",
+          "emoji": "string",
+          "ephemeral": 0,
+          "edited_type": "text",
+          "edited_content": {
+            "body": "string",
+            "buttons": [
+              {
+                "type": "reply",
+                "title": "string",
+                "id": "string"
+              }
+            ],
+            "sections": [
+              {
+                "title": "string",
+                "rows": [
+                  {
+                    "title": "string",
+                    "description": "string",
+                    "id": "string"
+                  }
+                ],
+                "product_items": [
+                  {
+                    "catalog_id": "string",
+                    "product_id": "string"
+                  }
+                ]
+              }
+            ],
+            "button": "string",
+            "view_once": true
+          },
+          "votes": [
+            "string"
+          ],
+          "comment": "string"
+        },
+        "context": {
+          "forwarded": true,
+          "forwarding_score": 0,
+          "mentions": [
+            "string"
+          ],
+          "ad": {
+            "advertiser_name": "string",
+            "media_type": "image",
+            "preview": "string",
+            "preview_url": "string",
+            "title": "string",
+            "body": "string",
+            "media_url": "string",
+            "source": {
+              "id": "string",
+              "type": "string",
+              "url": "string"
+            },
+            "auto_reply": true,
+            "attrib": true,
+            "ctwa": "string",
+            "ref": "string"
+          },
+          "conversion": {
+            "source": "string",
+            "data": "string",
+            "delay": 0
+          },
+          "quoted_id": "string",
+          "quoted_type": "text",
+          "quoted_content": {
+            "body": "string",
+            "buttons": [
+              {
+                "type": "reply",
+                "title": "string",
+                "id": "string"
+              }
+            ],
+            "sections": [
+              {
+                "title": "string",
+                "rows": [
+                  {
+                    "title": "string",
+                    "description": "string",
+                    "id": "string"
+                  }
+                ],
+                "product_items": [
+                  {
+                    "catalog_id": "string",
+                    "product_id": "string"
+                  }
+                ]
+              }
+            ],
+            "button": "string",
+            "view_once": true
+          },
+          "quoted_author": "string",
+          "ephemeral": 0
+        },
+        "reactions": [
+          {
+            "id": "string",
+            "emoji": "string",
+            "group_key": "string",
+            "t": 0,
+            "unread": true,
+            "count": 0
+          }
+        ],
+        "labels": [
+          {
+            "id": "4",
+            "name": "string",
+            "color": "salmon",
+            "count": 1
+          }
+        ]
+      },
+      "labels": [
+        {
+          "id": "31",
+          "name": "string",
+          "color": "salmon",
+          "count": 1
+        }
+      ],
+      "name_owner": "Group name owner",
+      "name_at": 1675964377,
+      "description": "Group description",
+      "description_owner": "Group description owner",
+      "description_id": "Group description ID",
+      "size": 2,
+      "participants": [
+        {
+          "id": "713552535",
+          "rank": "admin"
+        }
+      ],
+      "created_at": 1675964377,
+      "created_by": "",
+      "suspended": false,
+      "terminated": false,
+      "is_parent": false,
+      "is_default_subgroup": false,
+      "restricted": false,
+      "announcements": false,
+      "ephemeral": 0,
+      "invite_code": "Group invite code"
+    }
+  ],
+  "count": 20,
+  "total": 0,
+  "offset": 0
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+POST
+/groups
+Create group
+
+
+This method is responsible for creating a group with its respective participants. Just like WhatsApp you will need to add at least one contact to be able to create a group. Due to WhatsApp's anti-spam policy, some contacts are not automatically added to the group. Read more here
+
+Parameters
+No parameters
+
+Request body
+
+application/json
+Group data
+
+Example Value
+Schema
+{
+  "subject": "<Group Subject>"
+}
+Responses
+Code	Description	Links
+201	
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "id": "9-90773-292-2192-0917-7@xoHp78MNkIx..uJ52scmiP3En4f._",
+  "name": "Group name",
+  "type": "group",
+  "timestamp": 1675964377,
+  "participants": [
+    {
+      "id": "7752931992004",
+      "rank": "admin"
+    }
+  ],
+  "name_at": 1675964377,
+  "created_at": 1675964377,
+  "created_by": "",
+  "unprocessed_participants": [
+    ""
+  ]
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for add group
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified participant not found in contacts list
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+429	
+Too many requests
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+PUT
+/groups
+Accept group invite
+
+
+Allows you to join a group by knowing its invitation code
+
+Parameters
+No parameters
+
+Request body
+
+application/json
+Group data
+
+Example Value
+Schema
+{
+  "invite_code": "<invite code>"
+}
+Responses
+Code	Description	Links
+200	
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "group_id": "636640-13-260-170@g.us"
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for accept invite link
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Wrong invite code
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+GET
+/groups/{GroupID}
+Get group
+
+
+This method returns the group metadata with all information about the group and its participants
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "id": "283642-086620294@mZN",
+  "name": "Group name",
+  "type": "group",
+  "timestamp": 1675964377,
+  "chat_pic": "https://example.com/photo.jpg",
+  "chat_pic_full": "https://example.com/photo.jpg",
+  "pin": true,
+  "mute": true,
+  "mute_until": 0,
+  "archive": true,
+  "unread": 0,
+  "unread_mention": false,
+  "read_only": false,
+  "not_spam": true,
+  "last_message": {
+    "id": "string",
+    "type": "text",
+    "subtype": "string",
+    "chat_id": "string",
+    "chat_name": "string",
+    "from": "string",
+    "from_me": true,
+    "from_name": "string",
+    "source": "text",
+    "timestamp": 0,
+    "device_id": 0,
+    "status": "failed",
+    "text": {
+      "body": "string",
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "sections": [
+        {
+          "title": "string",
+          "rows": [
+            {
+              "title": "string",
+              "description": "string",
+              "id": "string"
+            }
+          ],
+          "product_items": [
+            {
+              "catalog_id": "string",
+              "product_id": "string"
+            }
+          ]
+        }
+      ],
+      "button": "string",
+      "view_once": true
+    },
+    "image": {
+      "id": "pPYZmzoYryXLnB0KckKrm4C7uo05BG3pwmOiVXE2iwgZKtH5vAja0zLL6GpA9y1j7mSQ-5b1D8B1D-B76e89b1C533ae1Eecbb4Ac3dDDfcFDE34ba59D2fbe13e9CbE928b2F07f3289ECfAD0050ba-E95821A",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "video": {
+      "id": "JWb8o7wLn2ZteASRRVhBFH8TwG5bcI78b-97EBfBD9bc5c-5Ef-eed4FbbEeBD-a6c7be-A76C7C84AB02E5bd95B72594dBdce87DF80987a81B2D1",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "seconds": 0,
+      "autoplay": true,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "short": {
+      "id": "MdYseBZ9OOvWuU5QaMsQmXd7HvPTam2emm2GZLr-E2fDf9cA7985fcD7DfC86cbF1B238AB5fD8e",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "seconds": 0,
+      "autoplay": true,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "gif": {
+      "id": "dtSO7XR04z-1FB3e4d5107051DEaafdC8Aaa1D9DaFab181Ee5ac696Cb7cc6FA6fDC4185",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "seconds": 0,
+      "autoplay": true,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "audio": {
+      "id": "FHDeekzeY2jgCjyuBIS2RJmgdCP0ma65XRGiW0VkHnFnSmkcQXY9OuehdVIRakfMil0NRQsHkiKJHv-A7fEFb-1ed6c0025fCcC8bAAAdc434Ae5a-eA6E9Bca-567B3241B59Fd1F1-",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "seconds": 0,
+      "recording_time": 0,
+      "view_once": true
+    },
+    "voice": {
+      "id": "U2wMFCQPPlEnbTauGReYzLLduqbBDJRne2ygzTGfR0UF79fRief3c1M0cJIpNk2EJUwsd5Y8C-87B1DB-ee36dAc6dD5F36fbB029c-08BABeD39823-0eC1a9E-4Bf18Ec1f1Cc7E2-1eEeEe2d67B4D4-3e9628-dceC05C",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "seconds": 0,
+      "recording_time": 0,
+      "view_once": true
+    },
+    "document": {
+      "id": "aRkuP31c60x8Kf-779AF90dFc003fD-f0f1D226BaCc9aAaDFA",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "filename": "string",
+      "page_count": 0,
+      "preview": "string",
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "link_preview": {
+      "body": "string",
+      "url": "string",
+      "id": "uYipLmwBYPlFiaC8rdscGB0UAtij8IY6jdBpm1ci84t7s68PjknsrU0yxnmJ8mmgch9ohpo4EIjcNWU7YR7ReqJtzerbGhm2DV-D-B9a8340de7E9D58aDD04A8CC0a4F6F8FE-cc7E6C846Ffd80c277E73a4F-Fa1dC-ee0ADeACF6456fd3f641b-Ea66af669-d",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "",
+      "newsletter_id": "5633310452058@newsletter",
+      "invite_code": "AUhHkorG5Mxmh3VoFIpHPt",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "sticker": {
+      "id": "eypVD8-Ac434300C59cA0aB76f9184b2-16Bc8d45DBeFe5a2-1dB4F201fD4AEEeEae5B55BDf",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "animated": true,
+      "width": 0,
+      "height": 0,
+      "preview": "string",
+      "view_once": true
+    },
+    "location": {
+      "latitude": 0,
+      "longitude": 0,
+      "address": "string",
+      "name": "string",
+      "url": "string",
+      "preview": "string",
+      "accuracy": 0,
+      "speed": 0,
+      "degrees": 0,
+      "comment": "string",
+      "view_once": true
+    },
+    "live_location": {
+      "latitude": 0,
+      "longitude": 0,
+      "accuracy": 0,
+      "speed": 0,
+      "degrees": 0,
+      "caption": "string",
+      "sequence_number": 0,
+      "time_offset": 0,
+      "preview": "string",
+      "view_once": true
+    },
+    "contact": {
+      "name": "string",
+      "vcard": "string",
+      "view_once": true
+    },
+    "contact_list": {
+      "list": [
+        {
+          "name": "string",
+          "vcard": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "interactive": {
+      "body": {
+        "text": "string"
+      },
+      "footer": {
+        "text": "string"
+      },
+      "action": {
+        "catalog_id": "string",
+        "product_id": "string"
+      },
+      "id": "BSwzrxfIF5-FcBb-35f32-43A9483c7A48CBE",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "view_once": true
+    },
+    "poll": {
+      "title": "string",
+      "options": [
+        "string",
+        "string"
+      ],
+      "vote_limit": 0,
+      "total": 0,
+      "results": [
+        {
+          "id": "string",
+          "name": "string",
+          "count": 0,
+          "voters": [
+            "916011894"
+          ]
+        }
+      ],
+      "view_once": true
+    },
+    "hsm": {
+      "header": {
+        "type": "text",
+        "text": {
+          "body": "string"
+        },
+        "image": {
+          "id": "up5rvAJx5I2jGxG4pzM7eUIAGkO09x5teTc3yIu3IqodDM4rtHnPh8jDVNAaZ6teHQHYk6NNezKHAa29mATPQ4WZgiU-0-1dAc284BC184feD2d3acFE2fFEaA584DEeE0aFf-bD8-7a21c4D8bC5CE-cadc3-8355a-A7E-82BE",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0
+        },
+        "video": {
+          "id": "Mz4xG6uY0zemYVmOh2StmVMFlVg0QeMUBMVIpzSWr7vlbxp7ccdSrubQJ5N7-17F14E14ec8E1c4a2bfb",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0
+        },
+        "document": {
+          "id": "VYcsGvBnasACXKTrwLWvKe2aMgz4RQ8UYyGALiy3U-2f3C81-2aE3AAa85bb-ca3DDfE7EE3e-E28",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0
+        },
+        "location": {
+          "latitude": 0,
+          "longitude": 0,
+          "address": "string",
+          "name": "string",
+          "url": "string",
+          "preview": "string",
+          "accuracy": 0,
+          "speed": 0,
+          "degrees": 0,
+          "comment": "string",
+          "view_once": true
+        }
+      },
+      "body": "string",
+      "footer": "string",
+      "buttons": [
+        {
+          "id": "string",
+          "type": "simple",
+          "text": "string",
+          "url": "string",
+          "phone_number": "string"
+        }
+      ]
+    },
+    "system": {
+      "body": "string"
+    },
+    "order": {
+      "order_id": "string",
+      "seller": "string",
+      "title": "string",
+      "text": "string",
+      "token": "string",
+      "item_count": 0,
+      "currency": "USD",
+      "total_price": 0,
+      "status": "new",
+      "preview": "string"
+    },
+    "group_invite": {
+      "body": "string",
+      "url": "string",
+      "id": "sZEQBkXibY8f-daD-DcE8BCfE--035b6A961be85fD5C-4a-7d5E0bebc89738608F8AcFf6447A620f5a75Cf5B1aD5",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "",
+      "newsletter_id": "160011265586112843@newsletter",
+      "invite_code": "8MWQZUQUaoauYWJXTNRSKd",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "newsletter_invite": {
+      "body": "string",
+      "url": "string",
+      "id": "K3aVtsyji7Ep6nI6V1Zxt9tak0ZS2JRSSrFscby6qLsdpsZn9IlF6V51gMlAn7GkDWZz3EHtcxt3Z88l4gbRt6ZxVUhi5b-B",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "",
+      "newsletter_id": "701505478943851@newsletter",
+      "invite_code": "kS25KHmBmPblRS9Rw1EoPd",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "admin_invite": {
+      "body": "string",
+      "newsletter_id": "4131900974614@newsletter",
+      "newsletter_name": "string",
+      "expiration": 0,
+      "preview": "string"
+    },
+    "product": {
+      "catalog_id": "string",
+      "product_id": "string"
+    },
+    "catalog": {
+      "body": "string",
+      "url": "string",
+      "id": "druj1f2nFgacBCboTaWs4ogU9LPO1rXPBp16FhunjqRi8zk5ee7vzGFRTnfV-E9E-5Fbb2d84bBEd8266cD8FdB7b7E-C4Dc35CBFa4de9Ed903FcB6-7fAcbDdbAfbc22ff-c7",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "",
+      "newsletter_id": "170070240479168048@newsletter",
+      "invite_code": "PJxY1GBHeLT3bD2eONUyTX",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "product_items": {
+      "type": "list"
+    },
+    "action": {
+      "target": "string",
+      "type": "edited",
+      "emoji": "string",
+      "ephemeral": 0,
+      "edited_type": "text",
+      "edited_content": {
+        "body": "string",
+        "buttons": [
+          {
+            "type": "reply",
+            "title": "string",
+            "id": "string"
+          }
+        ],
+        "sections": [
+          {
+            "title": "string",
+            "rows": [
+              {
+                "title": "string",
+                "description": "string",
+                "id": "string"
+              }
+            ],
+            "product_items": [
+              {
+                "catalog_id": "string",
+                "product_id": "string"
+              }
+            ]
+          }
+        ],
+        "button": "string",
+        "view_once": true
+      },
+      "votes": [
+        "string"
+      ],
+      "comment": "string"
+    },
+    "context": {
+      "forwarded": true,
+      "forwarding_score": 0,
+      "mentions": [
+        "string"
+      ],
+      "ad": {
+        "advertiser_name": "string",
+        "media_type": "image",
+        "preview": "string",
+        "preview_url": "string",
+        "title": "string",
+        "body": "string",
+        "media_url": "string",
+        "source": {
+          "id": "string",
+          "type": "string",
+          "url": "string"
+        },
+        "auto_reply": true,
+        "attrib": true,
+        "ctwa": "string",
+        "ref": "string"
+      },
+      "conversion": {
+        "source": "string",
+        "data": "string",
+        "delay": 0
+      },
+      "quoted_id": "string",
+      "quoted_type": "text",
+      "quoted_content": {
+        "body": "string",
+        "buttons": [
+          {
+            "type": "reply",
+            "title": "string",
+            "id": "string"
+          }
+        ],
+        "sections": [
+          {
+            "title": "string",
+            "rows": [
+              {
+                "title": "string",
+                "description": "string",
+                "id": "string"
+              }
+            ],
+            "product_items": [
+              {
+                "catalog_id": "string",
+                "product_id": "string"
+              }
+            ]
+          }
+        ],
+        "button": "string",
+        "view_once": true
+      },
+      "quoted_author": "string",
+      "ephemeral": 0
+    },
+    "reactions": [
+      {
+        "id": "string",
+        "emoji": "string",
+        "group_key": "string",
+        "t": 0,
+        "unread": true,
+        "count": 0
+      }
+    ],
+    "labels": [
+      {
+        "id": "63",
+        "name": "string",
+        "color": "salmon",
+        "count": 1
+      }
+    ]
+  },
+  "labels": [
+    {
+      "id": "",
+      "name": "string",
+      "color": "salmon",
+      "count": 1
+    }
+  ],
+  "name_owner": "Group name owner",
+  "name_at": 1675964377,
+  "description": "Group description",
+  "description_owner": "Group description owner",
+  "description_id": "Group description ID",
+  "size": 2,
+  "participants": [
+    {
+      "id": "1404112468488",
+      "rank": "admin"
+    }
+  ],
+  "created_at": 1675964377,
+  "created_by": "746056524675",
+  "suspended": false,
+  "terminated": false,
+  "is_parent": false,
+  "is_default_subgroup": false,
+  "restricted": false,
+  "announcements": false,
+  "ephemeral": 0,
+  "invite_code": "Group invite code"
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+PUT
+/groups/{GroupID}
+Update group info
+
+
+This method is responsible for changing the name and description of a group that already exists
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Request body
+
+application/json
+Example Value
+Schema
+{
+  "subject": "<New Group Subject>"
+}
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for update group
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+DELETE
+/groups/{GroupID}
+Leave group
+
+
+This method allows you to leave a group that you are a member of
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for leave group
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+GET
+/groups/{GroupID}/invite
+Get group invite
+
+
+This method retrieves the ID of the group invitation. What it is and how to work with it
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Responses
+Code	Description	Links
+200	
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "invite_code": "string"
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for create invite link
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+DELETE
+/groups/{GroupID}/invite
+Revoke group invite
+
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for delete invite link
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+POST
+/groups/{GroupID}/participants
+Add group participant
+
+
+This method is responsible for adding new members to the group. Due to WhatsApp's anti-spam policy, some contacts are not automatically added to the group. Read more here
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Request body
+
+application/json
+Example Value
+Schema
+{
+  "participants": [
+    "<Recipient WA-ID, from Contacts API>"
+  ]
+}
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true,
+  "failed": [
+    1234567890
+  ],
+  "processed": [
+    1234567890
+  ]
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for add participant
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group or participant not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+409	
+Specified participant already in group
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+DELETE
+/groups/{GroupID}/participants
+Remove group participant
+
+
+This method is responsible for removing members of the group
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Request body
+
+application/json
+Example Value
+Schema
+{
+  "participants": [
+    "<Recipient WA-ID, from Contacts API>"
+  ]
+}
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for remove participant
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group or participant not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+GET
+/groups/{GroupID}/icon
+Get group icon
+
+
+This method returns the profile image of group
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+image/png
+Controls Accept header.
+Example Value
+Schema
+string
+No links
+204	
+Group icon not set
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for get group icon
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+PUT
+/groups/{GroupID}/icon
+Set group icon
+
+
+This method is reponsibible for changing a group image that already exists
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Request body
+
+image/jpeg
+Example values are not available for image/jpeg media types.
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for set group icon
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+DELETE
+/groups/{GroupID}/icon
+Delete group icon
+
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for delete group icon
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+DELETE
+/groups/{GroupID}/admins
+Demote group admin
+
+
+
+PATCH
+/groups/{GroupID}/admins
+Promote to group admin
+
+
+This method is responsible for promoting group members to admins, you can promote one or more members to admins
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Request body
+
+application/json
+Example Value
+Schema
+{
+  "participants": [
+    "<Recipient WA-ID, from Contacts API>"
+  ]
+}
+Responses
+Code	Description	Links
+200	
+OK
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "success": true
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for promote group admin
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+403	
+You do not have permissions for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group or participant not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+POST
+/groups/link/{InviteCode}
+Send group invite link
+
+
+Parameters
+Name	Description
+InviteCode *
+string
+(path)
+Invite Code
+
+InviteCode
+Request body
+
+application/json
+Message group invite
+
+Example Value
+Schema
+{
+  "to": "1234567891@s.whatsapp.net",
+  "quoted": "GnXIO-m2bQHmibM-C_A3e06Itn-ifVS",
+  "ephemeral": 604800,
+  "edit": "JRJ.pCn3GPZbISQqD5sm-vS_XB",
+  "title": "string",
+  "body": "string",
+  "preview_type": "group_picture",
+  "preview": "string",
+  "media": "string",
+  "mime_type": "string",
+  "no_encode": true,
+  "mentions": [
+    "77804368659"
+  ],
+  "view_once": true
+}
+Responses
+Code	Description	Links
+201	
+Created
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "sent": true,
+  "message": {
+    "id": "string",
+    "type": "text",
+    "subtype": "string",
+    "chat_id": "string",
+    "chat_name": "string",
+    "from": "string",
+    "from_me": true,
+    "from_name": "string",
+    "source": "text",
+    "timestamp": 0,
+    "device_id": 0,
+    "status": "failed",
+    "text": {
+      "body": "string",
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "sections": [
+        {
+          "title": "string",
+          "rows": [
+            {
+              "title": "string",
+              "description": "string",
+              "id": "string"
+            }
+          ],
+          "product_items": [
+            {
+              "catalog_id": "string",
+              "product_id": "string"
+            }
+          ]
+        }
+      ],
+      "button": "string",
+      "view_once": true
+    },
+    "image": {
+      "id": "z0qVHRGSY664bthWfiUtVTLoNqzVqoiwk98bFZGmdweTlD7l3QunrpmExkB4W0-aAEF0db2DcAa-d-D8fBDccE19",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "video": {
+      "id": "DUuAjq7NryTLzkkGNr8tI5eWJqP2o6CyBJSlL7AHGQRQI2lH94dNb-ff1d-F31548eB9bC-C5AFb6edDbe3F7E35C3bF0C42d6Ae6e23ACe89a04A6943b81EF6ef1b-a-F98dEdBB97a193E905a27BBd",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "seconds": 0,
+      "autoplay": true,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "short": {
+      "id": "SysDBOxuvxQV3iQqq9FsGYRo6HIChYZn4NFUGMeMC-74c92D6815d94ECbc8E52E76f27b3eeDa8799F93942E-d5E-ca72A9Eab829c37aF14D1",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "seconds": 0,
+      "autoplay": true,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "gif": {
+      "id": "DTCDO2gQCvMDnGd2H0iEVjEo4jsIT2lttiriB2sVFduYOi9UT1CfDaLfQ8658cEfCMvd0xtLzuCaeOpiMGwQ-8C296f3eFA3ffacbfD4aCFEACE654a83dcAA09C7e9eb00d9c6E3FFbA74BED71Aac6E8C7A58-f3740971B6BF689cCb9efBB5",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "preview": "string",
+      "width": 0,
+      "height": 0,
+      "seconds": 0,
+      "autoplay": true,
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "audio": {
+      "id": "uESqwxdC633AhF6BsZz8K-C",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "seconds": 0,
+      "recording_time": 0,
+      "view_once": true
+    },
+    "voice": {
+      "id": "OKLle3YjCYqJt2SsLmVgfvdXInRXcAxl9KbDItLdEDuLeWLU9fkkKdRWoNOfo-a0c3E19924",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "seconds": 0,
+      "recording_time": 0,
+      "view_once": true
+    },
+    "document": {
+      "id": "tGFvhBYBWKOiglYzukimC6ZdnJ0Bnk2ye7gQsGDQe9TTZXXNYps9FkPupwQj0Y5kgugriGr46PKq6MF8vFaHBFb2BZ-f74AB457e0-aB33f",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "caption": "string",
+      "filename": "string",
+      "page_count": 0,
+      "preview": "string",
+      "buttons": [
+        {
+          "type": "reply",
+          "title": "string",
+          "id": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "link_preview": {
+      "body": "string",
+      "url": "string",
+      "id": "30Qj3UJwBlSRoy1Fm75PMPEiyfUX80S2021fyHofaph4-8C",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "",
+      "newsletter_id": "74667933856184@newsletter",
+      "invite_code": "xcSA0V7f0W0Y9UsX8NkGn9",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "sticker": {
+      "id": "79eEDOGc9ZDpDMD5zLczvYJ7H8JNA7qAG0kZkqoxXS191rBuHabpqc0scomx6Y4kBGop2Z6ZIXmTqYompi2uo-409caCA764B66A",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "animated": true,
+      "width": 0,
+      "height": 0,
+      "preview": "string",
+      "view_once": true
+    },
+    "location": {
+      "latitude": 0,
+      "longitude": 0,
+      "address": "string",
+      "name": "string",
+      "url": "string",
+      "preview": "string",
+      "accuracy": 0,
+      "speed": 0,
+      "degrees": 0,
+      "comment": "string",
+      "view_once": true
+    },
+    "live_location": {
+      "latitude": 0,
+      "longitude": 0,
+      "accuracy": 0,
+      "speed": 0,
+      "degrees": 0,
+      "caption": "string",
+      "sequence_number": 0,
+      "time_offset": 0,
+      "preview": "string",
+      "view_once": true
+    },
+    "contact": {
+      "name": "string",
+      "vcard": "string",
+      "view_once": true
+    },
+    "contact_list": {
+      "list": [
+        {
+          "name": "string",
+          "vcard": "string"
+        }
+      ],
+      "view_once": true
+    },
+    "interactive": {
+      "body": {
+        "text": "string"
+      },
+      "footer": {
+        "text": "string"
+      },
+      "action": {
+        "catalog_id": "string",
+        "product_id": "string"
+      },
+      "id": "QVYeRgSw2li8ng2NfAZhaEmg48EIDRVVWQNSjW0STG4EBFThP33mjOEOF1n2Q1fKNlaa7eK8jCszedh-6A4f685fbEE7b63dfdddbd9D0D08B9D5276bD0aB4-FBbA6b60430D1d8D737dB240FcdCEB5Bd7-1902ed6",
+      "link": "string",
+      "mime_type": "string",
+      "file_size": 0,
+      "file_name": "string",
+      "sha256": "string",
+      "timestamp": 0,
+      "view_once": true
+    },
+    "poll": {
+      "title": "string",
+      "options": [
+        "string",
+        "string"
+      ],
+      "vote_limit": 0,
+      "total": 0,
+      "results": [
+        {
+          "id": "string",
+          "name": "string",
+          "count": 0,
+          "voters": [
+            ""
+          ]
+        }
+      ],
+      "view_once": true
+    },
+    "hsm": {
+      "header": {
+        "type": "text",
+        "text": {
+          "body": "string"
+        },
+        "image": {
+          "id": "cK10mz3qt8J8i0CpUsl7Pv9rk70aUhaoSpRSi2vmVSwjoSs7GOHFsOogVlSRuwGvEN-B419B7eb57-4F247D4-Af6FDC-6",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0
+        },
+        "video": {
+          "id": "oAPpzZZUXqvNv2CIszcj1M8cdZSZ3EZ50HZ231DNqeNKCj-1A6-B7ce75EBCF68",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0
+        },
+        "document": {
+          "id": "oBIo15MK4jziWd2mGIrBTTgU5Wx4l8BZMhFDyO2oHTlH9ENdUHHyq-34428befEaFD",
+          "link": "string",
+          "mime_type": "string",
+          "file_size": 0,
+          "file_name": "string",
+          "sha256": "string",
+          "timestamp": 0
+        },
+        "location": {
+          "latitude": 0,
+          "longitude": 0,
+          "address": "string",
+          "name": "string",
+          "url": "string",
+          "preview": "string",
+          "accuracy": 0,
+          "speed": 0,
+          "degrees": 0,
+          "comment": "string",
+          "view_once": true
+        }
+      },
+      "body": "string",
+      "footer": "string",
+      "buttons": [
+        {
+          "id": "string",
+          "type": "simple",
+          "text": "string",
+          "url": "string",
+          "phone_number": "string"
+        }
+      ]
+    },
+    "system": {
+      "body": "string"
+    },
+    "order": {
+      "order_id": "string",
+      "seller": "string",
+      "title": "string",
+      "text": "string",
+      "token": "string",
+      "item_count": 0,
+      "currency": "USD",
+      "total_price": 0,
+      "status": "new",
+      "preview": "string"
+    },
+    "group_invite": {
+      "body": "string",
+      "url": "string",
+      "id": "cTxpAoZRwPpcpPHvZmE3mUMJ8tL3gVpFTlkoIKzAFNBjte4E0k03w9xx8hxjkw4YfbyZpCdMLVNh4cG6PrM-C7c4674Dbece1BFC5e78914E54B4e7DB19b",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "",
+      "newsletter_id": "79936412196014@newsletter",
+      "invite_code": "ICioKRPFBh7FHJ2fAUTslw",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "newsletter_invite": {
+      "body": "string",
+      "url": "string",
+      "id": "ogx4wfa2BcWmRcsluVtkWvIyteOE9xmSgC2E8IDJmCagBynGwLD0sNTCvUVIYU5lLZQbUl6hSN-e-A3DA3c58cc3CadB6167a6a26fA9Ef59DB99cc36A70A8DFC6ED-f-0f1390060AFc3Fed0cAA-A4Da46fe",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "342879689106",
+      "newsletter_id": "44821172984@newsletter",
+      "invite_code": "C0S7az90Xq88vOK3oaouBL",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "admin_invite": {
+      "body": "string",
+      "newsletter_id": "13419575778486@newsletter",
+      "newsletter_name": "string",
+      "expiration": 0,
+      "preview": "string"
+    },
+    "product": {
+      "catalog_id": "string",
+      "product_id": "string"
+    },
+    "catalog": {
+      "body": "string",
+      "url": "string",
+      "id": "JLFx2EwRuC4GcxOU1tvCKGvLomjjVvrsAKFWuXWElEK0OmJOHtfqzX4XtTEfTbDBbew2LGb2BqzFeXmr-140f-d4e2CfAF5Aa3CB7F567EA5D-C9-f0AF1e37d37DC04",
+      "link": "string",
+      "sha256": "string",
+      "catalog_id": "812409316312",
+      "newsletter_id": "234178899821408480@newsletter",
+      "invite_code": "q7Yv7AGc4U5HUCh1W0JZ1v",
+      "title": "string",
+      "description": "string",
+      "canonical": "string",
+      "preview": "string",
+      "view_once": true
+    },
+    "product_items": {
+      "type": "list"
+    },
+    "action": {
+      "target": "string",
+      "type": "edited",
+      "emoji": "string",
+      "ephemeral": 0,
+      "edited_type": "text",
+      "edited_content": {
+        "body": "string",
+        "buttons": [
+          {
+            "type": "reply",
+            "title": "string",
+            "id": "string"
+          }
+        ],
+        "sections": [
+          {
+            "title": "string",
+            "rows": [
+              {
+                "title": "string",
+                "description": "string",
+                "id": "string"
+              }
+            ],
+            "product_items": [
+              {
+                "catalog_id": "string",
+                "product_id": "string"
+              }
+            ]
+          }
+        ],
+        "button": "string",
+        "view_once": true
+      },
+      "votes": [
+        "string"
+      ],
+      "comment": "string"
+    },
+    "context": {
+      "forwarded": true,
+      "forwarding_score": 0,
+      "mentions": [
+        "string"
+      ],
+      "ad": {
+        "advertiser_name": "string",
+        "media_type": "image",
+        "preview": "string",
+        "preview_url": "string",
+        "title": "string",
+        "body": "string",
+        "media_url": "string",
+        "source": {
+          "id": "string",
+          "type": "string",
+          "url": "string"
+        },
+        "auto_reply": true,
+        "attrib": true,
+        "ctwa": "string",
+        "ref": "string"
+      },
+      "conversion": {
+        "source": "string",
+        "data": "string",
+        "delay": 0
+      },
+      "quoted_id": "string",
+      "quoted_type": "text",
+      "quoted_content": {
+        "body": "string",
+        "buttons": [
+          {
+            "type": "reply",
+            "title": "string",
+            "id": "string"
+          }
+        ],
+        "sections": [
+          {
+            "title": "string",
+            "rows": [
+              {
+                "title": "string",
+                "description": "string",
+                "id": "string"
+              }
+            ],
+            "product_items": [
+              {
+                "catalog_id": "string",
+                "product_id": "string"
+              }
+            ]
+          }
+        ],
+        "button": "string",
+        "view_once": true
+      },
+      "quoted_author": "string",
+      "ephemeral": 0
+    },
+    "reactions": [
+      {
+        "id": "string",
+        "emoji": "string",
+        "group_key": "string",
+        "t": 0,
+        "unread": true,
+        "count": 0
+      }
+    ],
+    "labels": [
+      {
+        "id": "",
+        "name": "string",
+        "color": "salmon",
+        "count": 1
+      }
+    ]
+  }
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+401	
+Need channel authorization for this action
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+402	
+Trial version limit exceeded
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+429	
+Too many requests
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+GET
+/groups/link/{InviteCode}
+Get group info by invite code
+
+
+
+GET
+/groups/{GroupID}/applications
+Get list of join requests to the group
+
+
+This method returns the list of join requests to the group
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+count
+number
+(query)
+Count of objects to return
+
+Default value : 100
+
+100
+offset
+number
+(query)
+Offset of objects to return
+
+offset
+Responses
+Code	Description	Links
+200	
+Group Application List
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+{
+  "applications": [
+    {
+      "chatId": "2492244341195883148246471985-1-@lv7k3QI09b92GXueocOy3B2xNhT5lJjNuppG1qiJa1G.3ZYZnmozhiKr",
+      "request_method": "invite_link",
+      "timestamp": 1717680789
+    }
+  ],
+  "count": 20,
+  "total": 0,
+  "offset": 0
+}
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+POST
+/groups/{GroupID}/applications
+Accept group applications for listed users
+
+
+This method returns the list with result of operation for each user
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Request body
+
+application/json
+Chat ID list
+
+Example Value
+Schema
+{
+  "application": "5-1964947512426700378-5-951@NDROAYd2UIHFBiiniWOU0J6TlgWU2pZBBcxcSu"
+}
+Responses
+Code	Description	Links
+200	
+Group Application edit result list
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+[
+  {
+    "chatId": "6574778343@zdt20uxjNQ96lSaRVVSgfw2Y7bMhRJ7XNqQLLFhBNDTHsOtyUT8yRqPJMwct.7r1dwwGJV2lm4ZfRY",
+    "success": true,
+    "error": "string"
+  }
+]
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+
+DELETE
+/groups/{GroupID}/applications
+Reject group applications for listed users
+
+
+This method returns the list with result of operation for each user
+
+Parameters
+Name	Description
+GroupID *
+string
+(path)
+Group ID
+
+GroupID
+Request body
+
+application/json
+Chat ID list
+
+Example Value
+Schema
+{
+  "application": "08211-11-5-2-9708142-60@vd7tJ9CKUyKNMPwUxjRw6T"
+}
+Responses
+Code	Description	Links
+200	
+Group Application edit result list
+
+Media type
+
+application/json
+Controls Accept header.
+Example Value
+Schema
+[
+  {
+    "chatId": "683990-7329514246705121-21615@jd_qvbj35nTplH7o2dZUalFGri7iS0aoEtL5",
+    "success": true,
+    "error": "string"
+  }
+]
+No links
+400	
+Wrong request parameters
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+404	
+Specified group not found
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
+No links
+500	
+Internal Error
+
+Media type
+
+application/json
+Example Value
+Schema
+{
+  "error": {
+    "code": 0,
+    "message": "string",
+    "details": "string",
+    "href": "string",
+    "support": "string"
+  }
+}
